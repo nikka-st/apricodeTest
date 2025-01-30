@@ -1,0 +1,18 @@
+@use "../../../index.scss" as *;
+
+.inputContainer {
+  width: max-content;
+  margin: 20px auto;
+  @include container(row, 20px);
+  align-items: center;
+}
+
+.input {
+  border-radius: 10px;
+  font-size: 18px;
+  padding: 10px;
+}
+
+.itemIcon {
+  @include icon(40px);
+}

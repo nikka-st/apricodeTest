@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+@mixin container($position, $gap) {
+  display: flex;
+  flex-direction: $position;
+  gap: $gap;
+}
+
+@mixin icon($size) {
+  width: $size;
+  height: $size;
+  cursor: pointer;
+}
+
+.checkbox {
+  width: 20px;
+  accent-color: pink;
+  cursor: pointer;
+}

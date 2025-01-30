@@ -1,0 +1,38 @@
+@use "../../../index.scss" as *;
+$grey-color: #bfbfbf;
+
+.itemContainer {
+  width: 100%;
+  @include container(column, 0px);
+}
+
+.itemCont {
+  width: 100%;
+  font-size: 20px;
+  padding: 5px;
+  border: 1px solid $grey-color;
+  border-radius: 10px;
+  justify-content: space-between;
+  @include container(row, 0px);
+}
+
+.itemTitle {
+  @include container(row, 10px);
+}
+
+.itemIcon {
+  @include icon(26px);
+}
+
+.subtasksCont {
+  margin-left: calc(100% - 98%);
+
+  @include container(column, 20px);
+}
+
+.subtasksTitle {
+  font-size: 14px;
+  color: $grey-color;
+  padding-bottom: 10px;
+  margin-left: 0;
+}
